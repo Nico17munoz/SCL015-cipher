@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href = "https://fonts.googleapis.com/css2? family = Teko: wght @ 300 & display = swap" rel = "stylesheet">
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+      <section class="page" id="page1">
+      <h1 class="title"id="mainTitle">Mensaje <br>Secreto</h1>
+      <figure>
+       <img src="img/sobre.png" alt="image cover page" class="icon" id="main_icon">
+       </figure>
+       <div class="page">
+      <form action="submit"></form>
+      <label for="Name" class="request">Usuario</label>
+      <input type="text" name="Name" id="Name" class="input"> <br>
+      <label for="" class="request">Contraseña</label>
+      <input type="password" name="password" id="password" class="input"> <br>
+      <button id= "open"class="button"type="submit">Entrar</button>
+    </div >
+      </section>
+    <section class="page" id="page2">
+      <header>
+        <div>
+           <img src="img/sobre.png" alt="logo" class="logo">  
+        </div>
+      </header class="">                                                                                                                                                                                                                                                                           
+      <h2 class="text_title">Te damos la <br>bienvenida!!</h2>
+    <img src="img/icono escrbir.png" alt="write" class="icon" onclick="location='cifrado.html'">
+        <div id="tray">
+        <img src="img/entrada.png" alt="entry" class="mini_icon">
+        <img src="img/salida.png" alt="exit" class="mini_icon">
+        </div>
+    </section>
     <script src="index.js" type="module"></script>
   </body>
 </html>

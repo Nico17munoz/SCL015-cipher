@@ -1,0 +1,151 @@
+body {
+    background-color: black;
+    font-family: 'Teko', sans-serif;
+    width: 100vw;
+    height: 100wh;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: lightcyan;
+}
+h1{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: flex;
+    margin: 100px;
+}
+.title{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+/*#main_icon {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+    padding: none;
+    margin: 100px;
+    background-color: whitesmoke;
+}*/
+figure{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: none;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+
+}
+
+.logo {
+    width:70px;
+    height: 60px;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 2px;
+    padding: none; 
+    justify-content: center;
+    widows: initial;
+}
+.request{
+    color: whitesmoke;
+    margin: 13px;
+    font-size: 40px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    width: 50%;
+    font-size: 40px;
+}
+#number{
+    width: 5%;
+}
+#box_send{
+
+    display: flex;
+    width: 600px;
+    height: 80px;
+    border: 1px solid #c3c3c3;
+    margin: 20px;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+
+}
+
+#user_secret{
+    width: 60%;
+}
+.button{
+    font-size: 30px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    justify-content: space-between;
+
+}
+#cipher{
+    display: flex;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    justify-content: space-between;
+}
+#send{
+    margin: 3px;
+}
+.icon{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        width: 50%;
+        padding: none;
+        margin: 100px;
+        background-color: whitesmoke;
+}
+.mini_icon{
+    display: flex;
+    width: 30%;
+    padding: 5px;
+    margin: 50px;
+    line-height: 75px;
+    align-content: space-between;
+}
+#tray{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: flex;
+    margin: 100px;
+}

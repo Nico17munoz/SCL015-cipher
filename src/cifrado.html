@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href = "https://fonts.googleapis.com/css2? family = Teko: wght @ 300 & display = swap" rel = "stylesheet">
+  </head>
+<body>
+    <div class="page">
+        <header class="logo"> 
+             <img src="img/sobre.png" alt="logo" class="logo">
+             </header>
+    <h1 class="title">Mensaje<br/>Secreto</h1>
+    <label for="number" class="request">Número secreto</label>
+    <input type="number" class= "input"name="" id="number"><br>
+    <textarea name="" id="message"  class= "textarea"cols="80" rows="10"></textarea><br>
+    <div id="cipher">
+    <input type="button" class="button"value="cifrar"id="cifrar">
+    <input type="button" class= "button"value="descifrar" id="descifrar"><br>
+    </div>
+    <textarea name="" id="messageTwo" cols="80" rows="10"></textarea><br>
+    <div id="box_send"> 
+    <label for="contact" class="request">Para:</label>
+    <input type="text" name="" id="user_secret" class= "input" placeholder="Usuario secreto">
+    <button class="button"type="submit"id="send">Enviar</button>
+    </div>
+    </div>
+    <script src="cipher.js"></script>
+</body>
+</html>
