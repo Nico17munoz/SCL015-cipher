@@ -1,46 +1,20 @@
-/*const encodeFunction = (offset, string) => {
-  console.log('encode', offset, string);
+const encodeFunction = (offset, string) => {
+  console.log(3, offset, string);}
+  /*declaro la función*/
 
-  if (!string)
-  return "";
-  const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  offset= (offset%26+26)%26;
-  return 
-  /**
-   * tenemos 26 letras, calcular rotacion que sea menor a 26,
-   * independiente del numero calcular las letras cifradas utilizando replace sobre una funcion
-   */
-  
-   /** 
-   * para cada letra de `string`
-   * aplicamos encode de letra
-   * concatenamos la letra resultante al string de salida
-   * 
-   * encode de letra simple
-   * buscar el cod ascii de la letra
-   * al codigo de le sumamos offset
-   * no quedamos con el resto de la division por 26 (cant de letras)
-   * convertimos el nuevo codigo en letra
-   */
-/*return ;
-};
-const decodeFunction = (offset, string) => {
-  console.log('decode', offset, string);
-  return 'a';
-};
-
-const cipher = {
-  "encode": encodeFunction,
-  "decode": decodeFunction,
-};*/
-
-
-export default cipher;
+/*export default cipher;*/
 
 document.getElementById("cifrar").addEventListener("click",function(){
   let text = document.getElementById("message").value;
-  console.log(text)
+  console.log(1,text)
+  let offset = document.getElementById("number").value;
+  console.log(2,offset)
+
+  encodeFunction(offset,text)
+/*invocamos a la función*/
 });
+
+
 /*,true)
   let displacement = document.getElementById("displacement").value;
  document.getElementById("messageTwo").value=
