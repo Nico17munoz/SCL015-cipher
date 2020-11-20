@@ -34,6 +34,7 @@ const cipher = {
   "decode": decodeFunction,
 };*/
 
+
 export default cipher;
 
 document.getElementById("cifrar").addEventListener("click",function(){
