@@ -1,31 +1,15 @@
-import cipher from './cipher.js';
+//import cipher from './cipher.js';
 
-/*function show(){
-    document.getElementById().style.display =
-}
+const pageOne= document.getElementById("pageOne");
+const pageTwo= document.getElementById("pageTwo");
+//declaradas paginas a mostrar y ocultar
 
-function hide(){
-    document.getElementById().style.display = 
-}*/
+const start = document.getElementById("open");
+start.addEventListener("click",function(){
+    pageOne.classList.add("ocultar");
+    pageTwo.classList.remove("ocultar");
+})
 
-console.log(cipher);
 
-/*document.getElementById("open")
-        document.addEventListener("click", function() {
-  document.getElementById("Page1").hidden = true;
-  document.getElementById("Page2").hidden = false;
-}, false);*/
 
-/*mostrar primera página*/
-
-/*document.getElementById("open")
-       .addEventListener("click",function (){
-        document.getElementById("page1").hidden = true;
-        document.getElementById("page2").hidden = false;
-},false);*/
-/*
-function nextPage(Mensaje_Secreto){
-document.getElementById("page2").classList.add("hide")
-document.getElementById("page1").classList.remove("hide")
-}
-*/
+//console.log(cipher);

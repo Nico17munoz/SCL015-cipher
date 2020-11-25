@@ -5,10 +5,10 @@ body {
     height: 100wh;
     margin: 0%;
     padding: 0%;
-    text-decoration: lightcyan;
+    text-decoration:lavender;
 }
 h1{
-    color: whitesmoke;
+    color: gray;
     text-align: center;
     font-weight: bolder;
     font-style: oblique;
@@ -18,7 +18,7 @@ h1{
     margin: 100px;
 }
 .title{
-    color: whitesmoke;
+    color:gray;
     font-weight: bolder;
     font-style: oblique;
     font-size: 80px;
@@ -124,7 +124,7 @@ figure{
         width: 50%;
         padding: none;
         margin: 100px;
-        background-color: whitesmoke;
+        background-color:gray;
 }
 .mini_icon{
     display: flex;
@@ -140,7 +140,7 @@ figure{
     align-content: center;
 }
 h2{
-    color: whitesmoke;
+    color:gray;
     text-align: center;
     font-weight: bolder;
     font-style: oblique;
@@ -148,4 +148,11 @@ h2{
     text-transform: uppercase;
     display: flex;
     margin: 100px;
+}
+.textarea{
+    font-size: 25pt;
+}
+
+.ocultar{
+    display: none;
 }

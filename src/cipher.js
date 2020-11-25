@@ -1,17 +1,19 @@
 const encodeFunction = (offset, string) => {
   console.log(3, offset, string);}
-  /*declaro la función*/
+//declaro la función
 
 /*export default cipher;*/
 
-document.getElementById("cifrar").addEventListener("click",function(){
+document.getElementById("cipher").addEventListener("click",function(){
   let text = document.getElementById("message").value;
   console.log(1,text)
   let offset = document.getElementById("number").value;
   console.log(2,offset)
+//tomamos los valores
 
   encodeFunction(offset,text)
 /*invocamos a la función*/
+ 
 });
 
 
