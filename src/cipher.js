@@ -1,39 +1,43 @@
-const encodeFunction = (offset, string) => {
-  console.log(3, offset, string);}
-//declaro la función
-
-/*export default cipher;*/
-
-document.getElementById("cipher").addEventListener("click",function(){
-  let text = document.getElementById("message").value;
-  console.log(1,text)
-  let offset = document.getElementById("number").value;
-  console.log(2,offset)
-//tomamos los valores
-
-  encodeFunction(offset,text)
-/*invocamos a la función*/
- 
-});
-
-
-/*,true)
-  let displacement = document.getElementById("displacement").value;
- document.getElementById("messageTwo").value=
- cifrar(text,displacement);
-
-function cifrar(text,displacement){
-  let resultado="";
-  const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  dislacement=(displacement%26+26)%26;
-    for(let i=0;i<text.lenght;i++){
-    if(letters.indexOf(text[i])!=-1){
-      let position= (letters.indexOf(text[i])+displacement)%26;
-      resualtado+=letters[position];
+const cipher= {
+  encode: (offset, text) => {
+    let outcome ="";
+    for (let index=0;index<text.length;index++){
+      let messageAscii= text.charCodeAt(index);
+      let newPosition= (messageAscii-65+offset)%26+65;
+      if(messageAscii===32){newPosition=32;}
+      let newText = String.fromCharCode(newPosition);
+      outcome+= newText;
     }
-    else {
-    resualtado+= text[i];
+    document.getElementById("messageTwo").innerHTML=outcome;
+    return outcome;
+  },
+  decode: (offset, text) => {
+    console.log ("donde estoy")
+    let outcome ="";
+    for (let index=0;index<text.length;index++){
+      let messageAscii= text.charCodeAt(index);
+      let newPosition= (messageAscii+65-offset)%26+65;
+      if(messageAscii===32){newPosition=32;}
+      let newText = String.fromCharCode(newPosition);
+      outcome+= newText;
     }
-   return resualtado;
-}}})
-console.log (resualtado); */
+    document.getElementById("messageTwo").innerHTML=outcome;
+    return outcome;
+  }
+}
+  //Pseudo codigo
+  /**
+   * declararemos una variable global que en el futuro guardará el mensaje cifrado
+   Ciclo for(condiciones){
+   * Las letras de la frase que escribe el usuario se convertiran en ascii(usamos string + charCodeAt())
+   * agregamos desplazamiento a las letras en ascii(usamos offset + formula de michelle)
+   * Si la letra en ascii es espacio(32) entonces  no se aplica desplazamiento y se retorna el mismo numero 32 (usamos condicionales)
+   * los nuevos numeros(letras con desplazamiento) las convertiremos en letras humanas.(String.fromCarCode)
+   * una vez cifrada la letra la vamos a ir guardando dentro de la variable vacía que declaramos al inicio
+   * }
+   * mostramos el resultado(van estar guardados en una variable) alos usuarios (innneHTML)
+
+   */
+
+
+  export default cipher;
